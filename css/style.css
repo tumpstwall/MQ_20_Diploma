@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans Bold';
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: bold;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'Open Sans', Arial, san-serif;
+  }
+
+  .header {
+    background-image: url(../images/football_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000;
+
+    position: relative;
+  }
+
+  .header::after {
+    content: "";
+    background-color: #1a2145;
+    opacity: 0.9;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .header-container {
+    position: relative;
+    z-index: 1;
+
+    color: #ffffff;
+  }
+
+  .header-logo {
+    fill: #ffffff;
+  }
+
+  .header-title {
+    text-transform: uppercase;
+  }
+
+  .download-button {
+      background: #5e42b0;
+  }
+
+@media (max-width: 640px) {
+    .header {
+        background-image: url(../images/football_767.jpg)
+    }
+
+    .header-container {
+        width: 20rem;
+    }
+
+    .header-logo {
+        width: 130px;
+        height: 33px;
+      }
+
+    .title-text {
+        font-size: 1.7rem;
+    }
+
+    .download-button {
+        width: 280px;
+        height: 30px;
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+}
+
+@media (min-width: 961px) and (max-width: 1920px) {
+
+}
+
+@media (min-width: 1920px) {
+    .header {
+        background-image: url(../images/football_1920.jpg);
+    }
+}
