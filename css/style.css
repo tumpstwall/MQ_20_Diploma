@@ -1,98 +1,182 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-Regular.woff);
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Open Sans Bold';
-    src: url(../fonts/OpenSans-Bold.woff);
-    font-weight: 700;
-    font-style: bold;
-  }
-  
-  body {
-    margin: 0px;
-    font-family: 'Open Sans', Arial, san-serif;
-  }
+  font-family: 'Open Sans';
+  src: url(../fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url(../fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: bold;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  background-color: #0a0e34;
+  opacity: 0.8;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header-container {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  fill: #ffffff;
+
+  position: relative;
+  z-index: 1;
+}
+
+.logo-image {
+ fill: #ffffff; 
+}
+
+.header-title-container {
+  margin-top: 290px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+}
+
+.header-text:last-child {
+  padding-left: 450px;
+}
+
+.download-buttons {
+  margin-top: 220px;
+
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.download-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #5e42b0;
+  border-radius: 50px;
+}
+
+.download-button-text {
+  display: flex;
+  flex-wrap: wrap;
+  
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.store {
+  font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+}
+
+
+
+@media (min-width: 1921px) {
   .header {
     background-image: url(../images/football_1920.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-color: #000000;
-
-    position: relative;
-  }
-
-  .header::after {
-    content: "";
-    background-color: #1a2145;
-    opacity: 0.9;
-    
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
 
   .header-container {
-    position: relative;
-    z-index: 1;
-
-    color: #ffffff;
+    width: 1560px;
   }
 
-  .header-logo {
-    fill: #ffffff;
+  .logo-image {
+    width: 190px;
+    margin-top: 50px;
   }
 
-  .header-title {
-    text-transform: uppercase;
+  .header-text {
+    font-size: 90px;
+    line-height: 100px;
   }
 
   .download-button {
-      background: #5e42b0;
+    width: 305px;
   }
 
-@media (max-width: 640px) {
-    .header {
-        background-image: url(../images/football_767.jpg)
-    }
+  .app-icon {
+    width: 40px;
+  }
 
-    .header-container {
-        width: 20rem;
-    }
-
-    .header-logo {
-        width: 130px;
-        height: 33px;
-      }
-
-    .title-text {
-        font-size: 1.7rem;
-    }
-
-    .download-button {
-        width: 280px;
-        height: 30px;
-    }
-
-}
-
-@media (min-width: 641px) and (max-width: 960px) {
-
+  .download-button-text {
+    margin-left: 30px;
+  }
 }
 
 @media (min-width: 961px) and (max-width: 1920px) {
+  .header {
+    background-image: url(../images/football_1920.jpg);
+  }
 
-}
+  .header-container {
+    width: 1560px;
+  }
 
-@media (min-width: 1920px) {
-    .header {
-        background-image: url(../images/football_1920.jpg);
-    }
+  .logo-image {
+    width: 190px;
+    margin-top: 50px;
+  }
+  
+  .header-text {
+    font-size: 90px;
+    line-height: 100px;
+  }
+
+  .download-buttons {
+    margin-bottom: 110px;
+  }
+
+  .download-button {
+    width: 305px;
+  }
+
+  .download-button:last-child {
+    margin-left: 50px;
+  }
+
+  .app-icon {
+    width: 40px;
+  }
+
+  .download-button-text {
+    margin-left: 30px;
+  }
 }
