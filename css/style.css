@@ -176,6 +176,43 @@ body {
 
 .step {
   display: flex;
+
+  position: relative;
+  z-index: 1;
+}
+
+.steps-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: #5e42b0;
+  
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 210px;
+}
+
+.step-number {
+  position: relative;
+
+  z-index: 3;
+}
+
+.step-number::before {
+  content: "";
+
+  position: absolute;
+  background: #8f7bc8;
+  border-radius: 20%;
+  z-index: 4;
+
+  width: 25px;
+
 }
 
 .steps-image {
