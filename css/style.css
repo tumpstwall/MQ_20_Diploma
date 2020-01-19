@@ -337,7 +337,9 @@ body {
   }
 
   .steps-description {
-    margin: 260px 0 0 130px;
+    box-sizing: border-box;
+    margin-top: 260px;
+    padding-left: 130px;
   }
 
   .step-title {
