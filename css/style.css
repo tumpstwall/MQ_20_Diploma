@@ -51,7 +51,7 @@ body {
   z-index: 1;
 }
 
-.logo-image, .surface-logo {
+.logo-image, .surface-logo, .app-icon {
  fill: #ffffff; 
 }
 
@@ -165,6 +165,10 @@ body {
   color: #c1c1c1;
 }
 
+.post-text {
+  width: 50%;
+}
+
 .players {
   display: flex;
   justify-content: center;
@@ -195,7 +199,63 @@ body {
 }
 
 /* footer */
+.footer {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
 
+  position: relative;
+}
+
+.footer::after {
+  content: "";
+  background-color: #0a0e34;
+  opacity: 0.8;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.footer-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-app-title {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Open Sans Bold';
+}
+
+.app-description {
+  text-transform: uppercase;
+  color: #a496ca;
+}
+
+.download-buttons-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 @media (min-width: 961px) and (max-width: 1920px) {
@@ -207,9 +267,12 @@ body {
     width: 1560px;
   }
 
+  .logo-container {
+    margin-top: 50px;
+  }
+
   .logo-image {
     width: 190px;
-    margin-top: 50px;
   }
   
   .header-text {
@@ -293,5 +356,38 @@ body {
 
   .footer {
     background-image: url(../images/game_1920.jpg);
+  }
+
+  .footer-container {
+    padding-top: 230px;
+  }
+
+  .footer-text {
+    margin-left: 35px;
+  }
+
+  .download-app-title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .app-description {
+    font-size: 30px;
+  }
+
+  .surface-logo {
+    width: 100px;
+    background-color: #684ac0;
+    padding: 15px;
+    border-radius: 20%;
+  }
+
+  .download-buttons-footer {
+    margin-top: 150px;
+  }
+
+  .logo-container-footer {
+    margin-top: 260px;
+    margin-bottom: 50px;
   }
 }
