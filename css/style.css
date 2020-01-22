@@ -18,6 +18,7 @@ body {
 }
 
 .header {
+  background-image: url(../images/football_1920.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -44,15 +45,24 @@ body {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   fill: #ffffff;
 
   position: relative;
   z-index: 1;
 }
 
+.logo-container {
+  margin-top: 50px;
+}
+
+.logo-image {
+  width: 190px;
+}
+
 .logo-image, .surface-logo, .app-icon {
- fill: #ffffff; 
+  fill: #ffffff; 
 }
 
 .header-title-container {
@@ -65,6 +75,9 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 
+  font-size: 90px;
+  line-height: 100px;
+
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
 }
 
@@ -74,6 +87,7 @@ body {
 
 .download-buttons {
   margin-top: 220px;
+  margin-bottom: 110px;
 
   display: flex;
   flex-wrap: nowrap;
@@ -92,6 +106,16 @@ body {
 
   background-color: #5e42b0;
   border-radius: 50px;
+
+  width: 305px;
+}
+
+.download-button:last-child {
+  margin-left: 50px;
+}
+
+.app-icon {
+  width: 40px;
 }
 
 .download-button-text {
@@ -99,6 +123,8 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: baseline;
+
+  margin: 20px 0px 20px 30px;
   
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -108,6 +134,8 @@ body {
 .store {
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
 }
+
+/*main-container*/
 
 .main-container {
   margin-left: auto;
@@ -124,22 +152,56 @@ body {
 .sport-content {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   width: 100%;
+
+  position: relative;
+}
+
+.athlet-post-image {
+  position: absolute;
+  top: 30px;
+  padding-left: 10%;
+}
+
+.athlet-post {
+  padding-left: 51%;
+}
+
+.post-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .post-content:nth-child(3) {
   background-color: #f6f4fa;
 }
 
-.post-content:nth-child(4) {
+.athlet-growth {
   background-color: #5e42b0;
 }
 
+.player-growth {
+  background-color: #0a0e34;
+}
+
 .posts-title {
+  margin: 110px 0px 50px;
+  font-size: 80px;
+  line-height: 80px;
+  
   text-transform: uppercase;
   color: #e7e7e7;
 }
 
+.player-growth-number {
+  color: #8c6fde;
+}
+
+.player-growth-text {
+  color: #ffffff;
+}
+
 .post-number {
+  font-size: 18px;
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
 
   position: relative;
@@ -147,6 +209,9 @@ body {
 
 .post-number::before {
   content: "";
+  bottom: 5px;
+  width: 20px;
+  height: 4px;
 
   position: absolute;
   background: #5e42b0;
@@ -160,13 +225,19 @@ body {
 .post-title-text {
   margin-top: 0px;
   margin-bottom: 0px;
-  
+  margin-left: 12px;
+  font-size: 36px;
+  line-height: 36px;
   text-transform: uppercase;
   color: #c1c1c1;
 }
-
 .post-text {
-  width: 50%;
+  width: 700px;
+}
+
+.post-text span {
+  margin: 30px 0px 0px 0px;
+  font-size: 20px;
 }
 
 .players {
@@ -174,11 +245,26 @@ body {
   justify-content: center;
 }
 
+.player-post-image {
+  position: absolute;
+  top: 30px;
+  padding-left: 40%;
+}
+
+.player-image {
+  width: 95%;
+}
+
+.player-post {
+  padding-left: 180px;
+}
+
+/*Шаги по работе с тренером и командой*/
+
 .step {
   display: flex;
 
   position: relative;
-  z-index: 1;
 }
 
 .steps-number {
@@ -190,29 +276,31 @@ body {
   height: 160px;
 
   background-color: #5e42b0;
-  
+
   position: absolute;
-  z-index: 2;
-  left: 50%;
-  top: 210px;
+  right: calc(50% - 80px);
+  top: 260px;
+}
+
+.steps-number span {
+  font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #f5f6f7;
 }
 
 .step-number {
   position: relative;
-
-  z-index: 3;
 }
 
 .step-number::before {
   content: "";
+  bottom: -3px;
+  width: 28px;
+  height: 4px;
 
   position: absolute;
   background: #8f7bc8;
   border-radius: 20%;
-  z-index: 4;
-
-  width: 25px;
-
 }
 
 .steps-image {
@@ -224,19 +312,32 @@ body {
 }
 
 .steps-description {
+  margin-top: 260px;
+  padding-left: 130px;
   width: 50%;
+  box-sizing: border-box;
+}
+
+.step-description span {
+  margin: 120px 0px 0px 0px;
+  width: 560px;
+  
+  font-size: 24px;
 }
 
 .step-title {
   margin-top: 0px;
   margin-bottom: 0px;
-  
+
+  font-size: 80px;
+  line-height: 80px;
   text-transform: uppercase;
   color: #c1c1c1;
 }
 
 /* footer */
 .footer {
+  background-image: url(../images/game_1920.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -266,6 +367,8 @@ body {
   position: relative;
 
   z-index: 1;
+
+  padding-top: 230px;
 }
 
 .footer-title {
@@ -273,18 +376,30 @@ body {
   flex-wrap: wrap;
 }
 
+.surface-logo {
+  width: 100px;
+  background-color: #684ac0;
+  padding: 15px;
+  border-radius: 20%;
+}
+
 .footer-text {
   display: flex;
   flex-direction: column;
+
+  margin-left: 35px;
 }
 
 .download-app-title {
+  font-size: 80px;
+  line-height: 80px;
   text-transform: uppercase;
   color: #ffffff;
   font-family: 'Open Sans Bold';
 }
 
 .app-description {
+  font-size: 30px;
   text-transform: uppercase;
   color: #a496ca;
 }
@@ -292,141 +407,20 @@ body {
 .download-buttons-footer {
   display: flex;
   flex-wrap: wrap;
+
+  margin-top: 150px;
+}
+
+.logo-container-footer {
+  margin-top: 260px;
+  margin-bottom: 50px;
 }
 
 
-@media (min-width: 961px) and (max-width: 1920px) {
-  .header {
-    background-image: url(../images/football_1920.jpg);
-  }
+@media (min-width: 641px) and (max-width: 960px) {
 
-  .header-container {
-    width: 1560px;
-  }
+}
 
-  .logo-container {
-    margin-top: 50px;
-  }
-
-  .logo-image {
-    width: 190px;
-  }
+@media (max-width: 640px){
   
-  .header-text {
-    font-size: 90px;
-    line-height: 100px;
-  }
-
-  .download-buttons {
-    margin-bottom: 110px;
-  }
-
-  .download-button {
-    width: 305px;
-  }
-
-  .download-button:last-child {
-    margin-left: 50px;
-  }
-
-  .app-icon {
-    width: 40px;
-  }
-
-  .download-button-text {
-    margin: 20px 0px 20px 30px;
-  }
-
-  .athlets-images {
-    margin-top: 30px;
-  }
-
-  .posts-title {
-    margin: 110px 0px 50px;
-    font-size: 80px;
-    line-height: 80px;
-  }
-
-  .post-content {
-    padding: 60px 0px;
-  }
-
-
-  .post-number {
-    font-size: 18px;
-  }
-
-  .post-number::before {
-    bottom: -8px;
-    width: 20px;
-    height: 4px;
-  }
-
-  .post-title-text {
-    margin-left: 12px;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .post-text p {
-    margin: 30px 0px 0px 0px;
-    font-size: 20px;
-  }
-
-  .steps-description {
-    box-sizing: border-box;
-    margin-top: 260px;
-    padding-left: 130px;
-  }
-
-  .step-title {
-    font-size: 80px;
-    line-height: 80px;
-  }
-
-  .step-description p {
-    margin: 120px 0px 0px 0px;
-    width: 560px;
-    
-    font-size: 24px;
-  }
-
-/*footer*/
-
-  .footer {
-    background-image: url(../images/game_1920.jpg);
-  }
-
-  .footer-container {
-    padding-top: 230px;
-  }
-
-  .footer-text {
-    margin-left: 35px;
-  }
-
-  .download-app-title {
-    font-size: 80px;
-    line-height: 80px;
-  }
-
-  .app-description {
-    font-size: 30px;
-  }
-
-  .surface-logo {
-    width: 100px;
-    background-color: #684ac0;
-    padding: 15px;
-    border-radius: 20%;
-  }
-
-  .download-buttons-footer {
-    margin-top: 150px;
-  }
-
-  .logo-container-footer {
-    margin-top: 260px;
-    margin-bottom: 50px;
-  }
 }
