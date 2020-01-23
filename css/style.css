@@ -105,9 +105,9 @@ body {
   align-items: center;
 
   background-color: #5e42b0;
-  border-radius: 50px;
+  border-radius: 2.5vw;
 
-  width: 305px;
+  width: 15.9vw;
 }
 
 .download-button:last-child {
@@ -115,7 +115,7 @@ body {
 }
 
 .app-icon {
-  width: 40px;
+  width: 2.1vw;
 }
 
 .download-button-text {
@@ -124,14 +124,16 @@ body {
   flex-direction: column;
   align-items: baseline;
 
-  margin: 20px 0px 20px 30px;
+  margin: 1vw 0px 1vw 1.6vw;
   
+  font-size: 0.7vw;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .store {
+  font-size: 0.7vw;
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
 }
 
@@ -204,12 +206,12 @@ body {
   color: #8c6fde;
 }
 
-.player-growth-text {
+.growth-text {
   color: #ffffff;
 }
 
 .post-number {
-  font-size: 1.1em;
+  font-size: 0.9vw;
   font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
 
   position: relative;
@@ -233,7 +235,7 @@ body {
 .post-title-text {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 12px;
+  margin-left: 0.62vw;
   font-size: 1.9vw;
   line-height: 1.9vw;
   text-transform: uppercase;
@@ -262,7 +264,7 @@ body {
 }
 
 .player-image {
-  width: 85%;
+  width: 49vw;
 }
 
 .player-post {
