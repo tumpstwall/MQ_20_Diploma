@@ -54,11 +54,11 @@ body {
 }
 
 .logo-container {
-  margin-top: 50px;
+  margin-top: 2.6vw;
 }
 
 .logo-image {
-  width: 190px;
+  width: 9.9vw;
 }
 
 .logo-image, .surface-logo, .app-icon {
@@ -66,7 +66,7 @@ body {
 }
 
 .header-title-container {
-  margin-top: 290px;
+  margin-top: 15.1vw;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -86,8 +86,8 @@ body {
 }
 
 .download-buttons {
-  margin-top: 220px;
-  margin-bottom: 110px;
+  margin-top: 11.5vw;
+  margin-bottom: 5.7vw;
 
   display: flex;
   flex-wrap: nowrap;
@@ -111,7 +111,7 @@ body {
 }
 
 .download-button:last-child {
-  margin-left: 50px;
+  margin-left: 2.6vw;
 }
 
 .app-icon {
@@ -159,11 +159,11 @@ body {
 .athlet-post-image {
   position: absolute;
   top: 1.6vw;
-  padding-left: 10%;
+  padding-left: 15.3vw;
 }
 
 .athlet-image {
-  width: 30vw;
+  width: 32vw;
 }
 
 .athlet-post {
@@ -236,12 +236,14 @@ body {
   color: #c1c1c1;
 }
 .post-text {
+  margin-top: 1.3vw;
   width: 40vw;
 }
 
 .post-text span {
   margin: 1.6vw 0px 0px 0px;
   font-size: 1.1vw;
+  /*line-height: 3vw; Посмотреть в макете 1920*/
 }
 
 .players {
@@ -251,7 +253,7 @@ body {
 
 .player-post-image {
   position: absolute;
-  top: 1.6vw;
+  top: 3.6vw;
   padding-left: 40%;
 }
 
@@ -426,7 +428,303 @@ body {
 
 
 @media (min-width: 641px) and (max-width: 960px) {
+  .header {
+    background-image: url(../images/football_767.jpg);
+  }
+  
+  .logo-container {
+    margin-top: 4.2vw;
+  }
+  
+  .logo-image {
+    width: 26.4vw;
+  }
+  
+  .header-title-container {
+    margin-top: 18.75vw;
+    width: 62.5vw;
+  }
+  
+  .header-text {
+    font-size: 6.7vw;
+    line-height: 6.7vw;
+  }
 
+  .header-text:last-child {
+    padding-left: 10vw;
+  }
+  
+  .download-buttons {
+    margin-top: 32.3vw;
+    margin-bottom: 11.5vw;
+  
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .download-button {
+    width: 32vw;
+  }
+  
+  .download-button:last-child {
+    margin-left: 30px;
+  }
+  
+  .app-icon {
+    width: 4.2vw;
+  }
+  
+  .download-button-text {
+    margin: 20px 0px 20px 30px;
+  }
+
+  .button-text {
+    font-size: 1.5vw;
+  }
+  
+  /*main-container*/
+  .athlets {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sport-content {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    width: 100%;
+  
+    position: relative;
+  }
+  
+  .athlet-post-image {
+    position: absolute;
+    top: 14.5vw;
+    left: -22.1vw;
+    padding-left: 0px;
+  }
+  
+  .athlet-image {
+    width: 66vw;
+  }
+  
+  .athlet-post {
+    padding-left: 38vw;
+  }
+  
+  .post-content {
+    padding-top: 5.2vw;
+    padding-bottom: 5.2vw;
+  }
+  
+  .posts-title {
+    margin: 11.5vw 0vw 2.6vw;
+    font-size: 10.4vw;
+    line-height: 10.4vw;
+  }
+  
+  .post-number {
+    font-size: 18px;
+    font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+  
+    position: relative;
+  }
+  
+  .post-number::before {
+    bottom: -0.05em;
+    /*width: 1.88em;
+    height: 0.2em;*/
+  }
+  
+  .post-title-text {
+    margin-left: 12px;
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+  }
+  .post-text {
+    margin: 4.6vw 0px 0px 0px;
+    width: 50vw;
+  }
+  
+  .post-text span {
+    font-size: 2.1vw;
+    line-height: 3.6vw;
+  }
+  
+  .players {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .player-post-image {
+    position: absolute;
+    top: 10.5vw;
+    right: 0vw;
+    padding-left: 0px;
+  }
+  
+  .player-image {
+    width: 59vw;
+  }
+  
+  .player-post {
+    padding-left: 4.2vw;
+  }
+  
+  /*Шаги по работе с тренером и командой*/
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .steps-number {
+    width: 15vw;
+    height: 15vw;
+
+    left: 4.5vw;
+    top: 64vw;
+  }
+  
+  .steps-number span {
+    font-size: 3.1vw;
+  }
+  
+  .step-number {
+    position: relative;
+  }
+  
+  .step-number::before {
+    content: "";
+    bottom: -0.16vw;
+    width: 3.5vw;
+    height: 0.7vw;
+  
+    position: absolute;
+    background: #8f7bc8;
+    border-radius: 20%;
+  }
+  
+  .steps-image {
+    width: 100%;
+  }
+  
+  .step-image {
+    width: 100%;
+  }
+  
+  .steps-description {
+    margin-top: 7.2vw;
+    padding-left: 4.5vw;
+  }
+  
+  .step-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+    text-transform: uppercase;
+    color: #c1c1c1;
+  }
+  
+  .step-description {
+    margin-top: 4.8vw;
+    margin-bottom: 12.7vw;
+    width: 85.2vw;
+  }
+  
+  .step-description span { 
+    font-size: 3.1vw;
+    line-height: 3.6vw;
+  }
+
+  .find-contact-description {
+    order: 2;
+  }
+
+  .find-contact-image {
+    order: 1;
+  }
+  
+  /* footer */
+  .footer {
+    background-image: url(../images/game_767.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000;
+  
+    position: relative;
+  }
+  
+  .footer::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.8;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  
+    position: relative;
+  
+    z-index: 1;
+  
+    padding-top: 12vw;
+  }
+  
+  .footer-title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .surface-logo {
+    width: 17.5vw;
+    background-color: #684ac0;
+    padding: 15px;
+    border-radius: 20%;
+  }
+  
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin-left: 0vw;
+    margin-top: 10.4vw;
+  }
+  
+  .download-app-title {
+    font-size: 10.4vw;
+    line-height: 10.4vw;
+  }
+  
+  .app-description {
+    font-size: 4.7vw;
+  }
+  
+  .download-buttons-footer {
+    display: flex;
+    flex-wrap: wrap;
+  
+    margin-top: 37.8vw;
+  }
+  
+  .logo-container-footer {
+    margin-top: 7.1vw;
+    margin-bottom: 2.6vw;
+  }
 }
 
 @media (max-width: 640px){
