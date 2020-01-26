@@ -15,6 +15,8 @@
 body {
   margin: 0px;
   font-family: 'Open Sans', Arial, sans-serif;
+
+  background-color: #ffffff;
 }
 
 .header {
@@ -217,6 +219,14 @@ body {
   color: #ffffff;
 }
 
+.post-title {
+  position: relative;
+}
+
+.post-number-container {
+  position: absolute;
+}
+
 .post-number {
   font-size: 0.9vw;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -228,7 +238,7 @@ body {
 .post-number::before {
   content: "";
   bottom: -0.05em;
-  width: 1.1em;
+  width: 100%;
   height: 0.2em;
 
   position: absolute;
@@ -236,14 +246,10 @@ body {
   border-radius: 20%;
 }
 
-.post-title {
-  display: flex;
-}
-
 .post-title-text {
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 0.62vw;
+  padding-left: 1.3vw;
   font-size: 1.9vw;
   line-height: 1.9vw;
   text-transform: uppercase;
@@ -254,7 +260,7 @@ body {
   width: 40vw;
 }
 
-.post-text span {
+.post-text p {
   margin: 1.6vw 0px 0px 0px;
   font-size: 1.1vw;
   /*line-height: 3vw; Посмотреть в макете 1920*/
@@ -353,7 +359,7 @@ body {
   margin-top: 6vw;
 }
 
-.step-description span {
+.step-description p {
   margin: 6.25vw 0px 0px 0px;
   width: 30vw;
   
@@ -561,7 +567,7 @@ body {
     width: 50vw;
   }
   
-  .post-text span {
+  .post-text p {
     font-size: 2.1vw;
     line-height: 3.6vw;
   }
@@ -650,7 +656,7 @@ body {
     width: 85.2vw;
   }
   
-  .step-description span { 
+  .step-description p { 
     font-size: 3.1vw;
     line-height: 3.6vw;
   }
@@ -865,7 +871,7 @@ body {
     width: 87.5vw;
   }
   
-  .post-text span{
+  .post-text p {
     font-size: 4.7vw;
     line-height: 5.6vw;
   }
@@ -955,7 +961,7 @@ body {
     width: 87.5vw;
   }
   
-  .step-description span { 
+  .step-description p { 
     font-size: 5vw;
     line-height: 6.25vw;
   }
