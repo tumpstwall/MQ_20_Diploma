@@ -184,19 +184,19 @@ body {
   padding-bottom: 3.1vw;
 }
 
-.post-content:nth-child(2) {
+.backround-light {
   background-color: #fafafa;
 }
 
-.post-content:nth-child(3) {
+.background-medium {
   background-color: #f6f4fa;
 }
 
-.athlet-growth {
+.background-dark-athlet {
   background-color: #5e42b0;
 }
 
-.player-growth {
+.background-dark-player {
   background-color: #0a0e34;
 }
 
