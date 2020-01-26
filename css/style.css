@@ -6,10 +6,10 @@
 }
 
 @font-face {
-  font-family: 'Open Sans Bold';
+  font-family: 'Open Sans';
   src: url(../fonts/OpenSans-Bold.woff);
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
 }
 
 body {
@@ -78,7 +78,8 @@ body {
   font-size: 4.5vw;
   line-height: 5vw;
 
-  font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .header-text:last-child {
@@ -134,7 +135,8 @@ body {
 
 .store {
   font-size: 0.7vw;
-  font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 /*main-container*/
@@ -212,7 +214,8 @@ body {
 
 .post-number {
   font-size: 0.9vw;
-  font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
 
   position: relative;
 }
@@ -295,7 +298,8 @@ body {
 }
 
 .steps-number span {
-  font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 1.25vw;
   color: #f5f6f7;
 }
@@ -411,7 +415,8 @@ body {
   line-height: 4.2vw;
   text-transform: uppercase;
   color: #ffffff;
-  font-family: 'Open Sans Bold';
+  font-family: 'Open Sans';
+  font-weight: bold;
 }
 
 .app-description {
@@ -529,7 +534,8 @@ body {
   
   .post-number {
     font-size: 18px;
-    font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
   
     position: relative;
   }
@@ -832,7 +838,8 @@ body {
   
   .post-number {
     font-size: 4.4vw;
-    font-family: 'Open Sans Bold', Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
   
     position: relative;
   }
