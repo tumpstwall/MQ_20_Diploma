@@ -333,7 +333,7 @@ body {
 }
 
 .steps-description {
-  margin-top: 13.6vw;
+  padding-top: 13.6vw;
   padding-left: 6.8vw;
   width: 50%;
   box-sizing: border-box;
@@ -630,7 +630,7 @@ body {
   }
   
   .steps-description {
-    margin-top: 7.2vw;
+    padding-top: 7.2vw;
     padding-left: 4.5vw;
   }
   
@@ -934,7 +934,7 @@ body {
   }
   
   .steps-description {
-    margin-top: 11vw;
+    padding-top: 11vw;
     padding-left: 6.25vw;
     width: 100%;
   }
