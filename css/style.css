@@ -65,7 +65,15 @@ body {
   fill: #ffffff; 
 }
 
+.hidden-header-title {
+  visibility: hidden;
+}
+
 .header-title-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
   margin-top: 15.1vw;
   text-transform: uppercase;
   color: #ffffff;
