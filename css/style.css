@@ -302,7 +302,7 @@ body {
 
 .step {
   display: flex;
-
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -348,6 +348,7 @@ body {
 }
 
 .step-image {
+  display: block;
   width: 100%;
 }
 
