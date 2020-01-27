@@ -187,6 +187,7 @@ body {
 
 .athlet-post {
   padding-left: 51%;
+  padding-right: 1%;
 }
 
 .post-content {
@@ -210,8 +211,12 @@ body {
   background-color: #0a0e34;
 }
 
+.post-title-container {
+  padding: 5.7vw 0vw 2.6vw;
+}
+
 .posts-title {
-  margin: 5.7vw 0vw 2.6vw;
+  margin: 0vw;
   font-size: 4.2vw;
   line-height: 4.2vw;
   
@@ -560,6 +565,7 @@ body {
   
   .athlet-post {
     padding-left: 38vw;
+    padding-right: 1vw;
   }
   
   .post-content {
@@ -668,6 +674,8 @@ body {
   .steps-description {
     padding-top: 7.2vw;
     padding-left: 4.5vw;
+
+    width: 100%;
   }
   
   .step-title {
@@ -683,7 +691,6 @@ body {
   .step-description {
     margin-top: 4.8vw;
     margin-bottom: 12.7vw;
-    width: 85.2vw;
   }
 
   .p {
@@ -691,6 +698,8 @@ body {
   }
   
   .step-description p { 
+    width: 85.2vw;
+
     font-size: 3.1vw;
     line-height: 3.6vw;
   }
@@ -862,7 +871,7 @@ body {
   
   .athlet-post-image {
     position: absolute;
-    top: 25vw;
+    top: 30vw;
     left: 20.3vw;
     padding-left: 0px;
   }
@@ -873,6 +882,7 @@ body {
   
   .athlet-post {
     padding-left: 6.25vw;
+    padding-right: 0.1vw;
   }
   
   .post-content {
@@ -901,7 +911,7 @@ body {
   }
   
   .post-title-text {
-    margin-left: 3.1vw;
+    padding-left: 6vw;
     font-size: 7.2vw;
     line-height: 7.2vw;
   }
@@ -1003,6 +1013,7 @@ body {
   .step-description p { 
     font-size: 5vw;
     line-height: 6.25vw;
+    width: 87.5vw
   }
 
   .find-contact-description {
