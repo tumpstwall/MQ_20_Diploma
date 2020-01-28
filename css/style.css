@@ -259,6 +259,14 @@ body {
   border-radius: 20%;
 }
 
+.athlet-growth-number::before {
+  background: #ffffff;
+}
+
+.player-growth-number::before {
+  background: #ffffff;
+}
+
 .post-title-text {
   margin-top: 0px;
   margin-bottom: 0px;
